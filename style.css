@@ -307,7 +307,7 @@ section {
 article {
     display: flex;
     width: 10rem;
-    justify-content: flex-start;
+    text-align: left;
     gap: 0.5rem;
 }
 
@@ -367,7 +367,6 @@ article .social-icon {
 #contact {
     padding-top: 4vh;
     height: 70vh;
-    margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
