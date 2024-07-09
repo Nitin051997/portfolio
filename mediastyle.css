@@ -1,0 +1,47 @@
+@media screen and (max-width: 640px) {
+    #nav-bar-dekstopscreen{
+        display: none;
+    }
+    #nav-bar-mobilescreen{
+        display: flex;
+    }
+    .arrow {
+        display: none;
+    }
+
+    #profile, .section-container {
+        display: block;
+    }
+    .profile-pic-container {
+        width: 215px;
+        height: 215px;
+        margin: 0 auto 2rem;
+    }
+    section {
+        margin: 0.5%;
+    }
+
+    .about-containers {
+        flex-wrap: wrap;
+    }
+
+    #projects {
+        margin-top: 20rem;
+    }
+
+    #contact {
+        margin-top: 30rem;
+    }
+    .contact-info-upper-container {
+        display: block;
+    }
+    .nav-launcher {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #contact {
+        margin-top: 25rem;
+    }
+}
