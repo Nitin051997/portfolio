@@ -31,7 +31,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .section-container, .about-containers, .text-container {
+    .section-container, .about-containers, .text-container, footer {
         margin-left: 0.6rem;
     }
 
