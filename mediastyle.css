@@ -31,8 +31,8 @@
 }
 
 @media screen and (max-width: 500px) {
-    .section-container, .about-containers, .text-container, footer {
-        margin-left: 0.6rem;
+    .section-container, .about-containers, .text-container, .nav-link-container {
+        margin: 0.6rem;
     }
 
     #experience {
@@ -49,13 +49,19 @@
         margin-right: 3rem;
     }
 
+    .project-img {
+        border-radius: 2rem;
+        width: 120%;
+        height: 90%;
+    }
+
     #contact {
-        margin-top: 8rem;
+        margin-top: 12rem;
     }
     .contact-info-upper-container {
         display: block;
     }
     .nav-launcher {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
