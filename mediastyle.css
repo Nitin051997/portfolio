@@ -28,20 +28,37 @@
     #projects {
         margin-top: 20rem;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .section-container {
+        margin-left: 1rem;
+    }
+
+    #experience {
+        margin-top: 8rem;
+    }
+    .about-containers {
+        margin-left: 1rem;
+    }
+
+    article {
+        display: flex;
+        width: 5rem;
+        justify-content: flex-start;
+        gap: 0;
+    }
+    .article-container {
+        margin-right: 3rem;
+    }
 
     #contact {
-        margin-top: 30rem;
+        margin-top: 8rem;
     }
     .contact-info-upper-container {
         display: block;
     }
     .nav-launcher {
         font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #contact {
-        margin-top: 25rem;
     }
 }
