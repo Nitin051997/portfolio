@@ -31,15 +31,12 @@
 }
 
 @media screen and (max-width: 500px) {
-    .section-container {
-        margin-left: 1rem;
+    .section-container, .about-containers, .text-container {
+        margin-left: 0.6rem;
     }
 
     #experience {
         margin-top: 8rem;
-    }
-    .about-containers {
-        margin-left: 1rem;
     }
 
     article {
