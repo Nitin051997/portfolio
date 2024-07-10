@@ -1,4 +1,72 @@
+/*iPhone Mini Display*/
 @media screen and (max-width: 360px) {
+    #nav-bar-dekstopscreen{
+        display: none;
+    }
+    #nav-bar-mobilescreen{
+        display: flex;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    section {
+        margin: 0.5%;
+    }
+
+    #profile, .section-container {
+        display: block;
+    }
+    .profile-pic-container {
+        width: 215px;
+        height: 215px;
+        margin: 0 auto 2rem;
+    }
+    .section-container, .about-containers, .text-container, .nav-link-container {
+        margin: 0.6rem;
+    }
+
+    #experience {
+        margin-top: 8rem;
+    }
+
+    article {
+        display: flex;
+        width: 5rem;
+        justify-content: flex-start;
+        gap: 0;
+    }
+    .article-container {
+        margin-right: 3rem;
+    }
+
+    #projects {
+        margin-top: 20rem;
+    }
+    .project-img {
+        border-radius: 2rem;
+        width: 120%;
+        height: 90%;
+    }
+
+    .about-containers {
+        flex-wrap: wrap;
+    }
+
+    #contact {
+        margin-top: 12rem;
+    }
+    .contact-info-upper-container {
+        display: block;
+    }
+    .nav-launcher {
+        font-size: 0.8rem;
+    }
+}
+
+/*Samsung Galaxy S Display*/
+@media screen and (max-width: 370px) {
     #nav-bar-dekstopscreen{
         display: none;
     }
