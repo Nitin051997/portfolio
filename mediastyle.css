@@ -1,5 +1,5 @@
-/*iPhone Display*/
-@media screen and (max-width: 391px) {
+/*Google Pixel Display*/
+@media screen and (max-width: 481px) {
     #nav-bar-dekstopscreen{
         display: none;
     }
@@ -18,17 +18,18 @@
     #profile, .section-container {
         display: block;
     }
+
     #profile {
-        height: 610px;
+        height: 770px;
     }
     .profile-pic-container {
-        width: 215px;
-        height: 215px;
+        width: 285px;
+        height: 285px;
         margin: 0 auto 2rem;
     }
 
     #about {
-        height: 670px;
+        height: 630px;
         margin-top: 3rem;
     }
     .section-container, .about-containers, .text-container, .nav-link-container {
@@ -37,7 +38,7 @@
 
     article {
         display: flex;
-        width: 5rem;
+        width: 7rem;
         justify-content: flex-start;
         gap: 0;
     }
@@ -68,6 +69,30 @@
     }
     .nav-launcher {
         font-size: 0.8rem;
+    }
+}
+
+/*iPhone Display*/
+@media screen and (max-width: 391px) {
+    #profile {
+        height: 610px;
+    }
+    .profile-pic-container {
+        width: 215px;
+        height: 215px;
+        margin: 0 auto 2rem;
+    }
+
+    #about {
+        height: 670px;
+        margin-top: 3rem;
+    }
+
+    article {
+        display: flex;
+        width: 5rem;
+        justify-content: flex-start;
+        gap: 0;
     }
 }
 
