@@ -66,7 +66,7 @@
 }
 
 /*Samsung Galaxy S Display*/
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 371px) {
     #nav-bar-dekstopscreen{
         display: none;
     }
@@ -85,17 +85,20 @@
     #profile, .section-container {
         display: block;
     }
+    #profile {
+        height: 600px;
+    }
     .profile-pic-container {
         width: 215px;
         height: 215px;
         margin: 0 auto 2rem;
     }
+
+    #about {
+        margin-top: 3rem;
+    }
     .section-container, .about-containers, .text-container, .nav-link-container {
         margin: 0.6rem;
-    }
-
-    #experience {
-        margin-top: 8rem;
     }
 
     article {
@@ -109,7 +112,7 @@
     }
 
     #projects {
-        margin-top: 20rem;
+        margin-top: 12.5rem;
     }
     .project-img {
         border-radius: 2rem;
@@ -122,7 +125,7 @@
     }
 
     #contact {
-        margin-top: 12rem;
+        margin-top: 8rem;
     }
     .contact-info-upper-container {
         display: block;
