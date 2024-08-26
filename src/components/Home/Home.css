@@ -1,0 +1,308 @@
+.home-section-container {
+    height: 88.5vh;
+    margin-top: 80px;
+    box-sizing: border-box;
+    min-height: fit-content;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+}
+
+.profile-info-container {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-info-one {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.profile-info-two {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-weight: 550;
+}
+
+.profile-info-three {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    font-weight: 550;
+}
+
+.profile-info-three-job {
+    color: #be29ec;
+}
+
+.profile-info-one:hover {
+    cursor: none;
+}
+
+.profile-info-two {
+    cursor: none;
+    background: linear-gradient(360deg, #74d600, #c5f55f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.profile-info-three-job, .profile-info-three-title {
+    cursor: none;
+    background: linear-gradient(360deg, #be29ec, #d896ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.profile-btn-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-download-cv {
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 30px;
+    display: block;
+    border: 0px;
+    font-size: medium;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f93a13;
+    background-image: linear-gradient(45deg, #ff7426 0%, #f93a13  51%, #ff7426  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+  
+.button-download-cv:hover {
+    background-position: right center;
+    color: white;
+    text-decoration: none;
+}
+  
+.button-download-cv:active {
+    transform: scale(0.95);
+}
+
+.button-contact {
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;
+    border-radius: 30px;
+    display: block;
+    border: 0px;
+    font-size: medium;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #00ff83;
+    background-image: linear-gradient(45deg, #1ab577 0%, #00ff83  51%, #1ab577  100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+  
+.button-contact:hover {
+    background-position: right center;
+    color: black;
+    text-decoration: none;
+}
+  
+.button-contact:active {
+    transform: scale(0.95);
+}
+
+.profile-pic-container {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic-cover {
+    height: 380px;
+    width: 380px;
+    padding: 8px;
+    border: 5px solid #00d27f;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.profile-pic-cover:hover {
+    cursor: none;
+}
+
+.profile-social-cover-github {
+    position: relative;
+    left: 200px;
+    bottom: 430px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-github {
+    width: 60px;
+    height: 60px;
+}
+
+.profile-social-cover-linkedin {
+    position: relative;
+    left: 300px;
+    bottom: 430px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: blue;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-linkedin {
+    width: 60px;
+    height: 60px;
+}
+
+.profile-pic {
+    height: 380px;
+}
+
+.home-section-container-mobile {
+    height: 88.5vh;
+    margin-top: 80px;
+    box-sizing: border-box;
+    min-height: fit-content;
+    color: white;
+    background-color: black;
+    display: none;
+    flex-direction: column;
+    padding: 100px;
+}
+
+@media screen and (max-width: 481px) {
+    .home-section-container{
+        display: none;
+    }
+    .home-section-container-mobile {
+        display: flex;
+    }
+    .profile-info-container{
+        margin-top: 20px;
+    }
+    .profile-info-one {
+        font-size: 20px;
+    }
+    .profile-info-two {
+        font-size: 35px;
+    }
+    .profile-info-three {
+        font-size: 35px;
+    }
+    .profile-btn-container {
+        gap: 10px;
+    }
+    .button-download-cv {
+        width: 163.5px;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .home-section-container-mobile{
+        margin-top: 100px;
+    }
+    .profile-pic-cover {
+        height: 310px;
+        width: 310px;
+    }
+    .profile-pic {
+        height: 310px;
+    }
+    .profile-social-cover-github {
+        left: 140px;
+        bottom: 360px;
+    }
+    .profile-social-cover-linkedin {
+        left: 230px;
+        bottom: 400px;
+    }
+    .profile-info-container{
+        margin-top: 80px;
+    }
+    .profile-info-one {
+        font-size: 18px;
+    }
+    .profile-info-two {
+        font-size: 30px;
+    }
+    .profile-info-three {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 371px) {
+    .profile-info-one {
+        font-size: 18px;
+    }
+    .profile-info-two {
+        font-size: 28px;
+    }
+    .profile-info-three {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-height: 668px) {
+    .home-section-container-mobile{
+        margin-top: 120px;
+    }
+    .profile-pic-cover {
+        height: 260px;
+        width: 260px;
+    }
+    .profile-pic {
+        height: 260px;
+    }
+    .profile-social-cover-github {
+        left: 120px;
+        bottom: 310px;
+    }
+    .profile-social-cover-linkedin {
+        left: 200px;
+        bottom: 350px;
+    }
+    .profile-info-one {
+        font-size: 15px;
+    }
+    .profile-info-two {
+        font-size: 25px;
+    }
+    .profile-info-three {
+        font-size: 25px;
+    }
+    .profile-info-container {
+        margin-top: 125px;
+    }
+}

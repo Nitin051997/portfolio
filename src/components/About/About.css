@@ -1,0 +1,121 @@
+.about-section-container {
+    height: 88.5vh;
+    margin-top: 80px;
+    box-sizing: border-box;
+    min-height: fit-content;
+    color: white;
+    background-color: black;
+    padding: 60px;
+}
+
+.about-section-container-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.about-details-container {
+    height: auto;
+    margin: 10px 60px 10px 60px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-details-background {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-details {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.about-details-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.about-details-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.about-details-label {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-details-info {
+    flex: 50%;
+}
+
+.about-details-info-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 15px;
+}
+
+.color-style-purple {
+    background: linear-gradient(360deg, #be29ec, #d896ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.color-style-green {
+    background: linear-gradient(360deg, #74d600, #c5f55f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.color-style-orange {
+    background: linear-gradient(360deg, #ff9a00, #ffc100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+@media screen and (max-width: 481px) {
+    .about-section-container-title {
+        font-size: 20px;
+    }
+    .about-details-container {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+    .about-details-background {
+        flex-direction: row;
+    }
+    .about-details-title {
+        font-size: 20px;
+    }
+    .about-details-label {
+        font-size: 15px;
+    }
+    .about-details-info-text {
+        padding: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .about-details-info-text {
+        font-size: 18px;
+    }
+}

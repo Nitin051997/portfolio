@@ -1,0 +1,52 @@
+.desktop-app-bar {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 4px 10px rgba(24, 24, 24, 1);
+}
+
+.desktop-app-bar-list {
+    display: flex;
+    gap: 40px;
+}
+
+.desktop-app-bar-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.desktop-app-bar-navbtn {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.desktop-app-bar-title {
+    cursor: none;
+    background: linear-gradient(360deg, #00d27f, #00ff83);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.option-selected {
+    color: #ceff63;
+    transition: color 0.5s ease;
+}
+
+@media screen and (max-width: 481px) {
+    .desktop-app-bar-list {
+        display: none;
+    }
+}

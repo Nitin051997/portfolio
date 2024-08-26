@@ -1,24 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from "./components/NavBar/NavBar";
+import NavButton from './components/NavBar/NavButton';
+import Portfolio from "./components/App/Portfolio";
+import { useState } from 'react';
 
 function App() {
+
+  const [navigate, setNavigate] = useState(1);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpenNavbar = () => {
+    setIsOpen(!isOpen);
+  }
+
+  const handleNavigate = ( type, navValue ) => {
+    if(type === 'goUp'){
+      if(navigate > 1){
+        setNavigate((old) => {return old - 1});
+      }
+    } else if(type === 'goDown'){
+      if(navigate < 5){
+        setNavigate((old) => {return old + 1});
+      }
+    } else if(type === 'navbar'){
+      setNavigate(navValue);
+      handleOpenNavbar();
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar navigate={navigate} handleNavigate={handleNavigate}/>
+        <NavButton navigate={navigate} isOpen={isOpen} handleNavigate={handleNavigate} handleOpenNavbar={handleOpenNavbar}/>
+          <Portfolio navigate={navigate} />
+    </>
   );
 }
 

@@ -1,0 +1,12 @@
+[
+    {"title": "React Js", "level": "Intermediate", "image": "react", "type": "forntend"},
+    {"title": "Redux", "level": "Intermediate", "image": "redux", "type": "forntend"},
+    {"title": "HTML", "level": "Experienced", "image": "html", "type": "forntend"},
+    {"title": "CSS", "level": "Basic", "image": "css", "type": "forntend"},
+    {"title": "Java Script", "level": "Intermediate", "image": "javascript", "type": "forntend"},
+    {"title": "Material UI", "level": "Basic", "image": "materialui", "type": "forntend"},
+    {"title": "Bootstrap", "level": "Basic", "image": "bootstrap", "type": "forntend"},
+    {"title": "Oracle SQL", "level": "Intermediate", "image": "sql", "type": "backend"},
+    {"title": "PL/SQL", "level": "Basic", "image": "plsql", "type": "backend"},
+    {"title": "GitBash", "level": "Basic", "image": "gitbash", "type": "backend"}
+]

@@ -1,0 +1,139 @@
+.projects-section-container {
+    height: 88.5vh;
+    margin-top: 80px;
+    box-sizing: border-box;
+    min-height: fit-content;
+    color: white;
+    background-color: black;
+    padding: 60px;
+}
+
+.projects-section-container-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.projects-container {
+    height: auto;
+    margin: 10px 60px 10px 60px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.card-shadow {
+    box-shadow: 0 5px 12px rgba(95, 95, 95, 1);
+}
+
+.project-card {
+    height: 280px;
+    width: 220px;
+    border-radius: 5px;
+    background-color: #beadd5;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: default;
+}
+
+.project-picture {
+    width: 220px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.project-card-mobile {
+    height: 380px;
+    width: 220px;
+    border-radius: 5px;
+    background-color: #beadd5;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: default;
+}
+
+.project-picture-container {
+    display: flex;
+    justify-content: center;
+}
+
+.project-picture-mobile {
+    width: 120px;
+    height: 220px;
+    border-radius: 5px;
+}
+
+.project-title {
+    color: #291C3A;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+}
+
+.project-live {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.project-live-img {
+    width: 8px;
+    height: 8px;
+    animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.project-bio {
+    color: #331C52;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.project-btn {
+    border: none;
+    background-color: #331C52;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.project-btn-img {
+    width: 25px;
+    height: 25px;
+}
+
+.project-btn-label {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+@media screen and (max-width: 481px) {
+    .projects-section-container-title {
+        font-size: 20px;
+    }
+    .projects-container {
+        margin: 10px;
+        padding: 0px;
+        gap: 40px;
+    }
+}

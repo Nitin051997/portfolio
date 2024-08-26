@@ -1,0 +1,152 @@
+.skills-section-container {
+    height: 88.5vh;
+    margin-top: 80px;
+    box-sizing: border-box;
+    min-height: fit-content;
+    color: white;
+    background-color: black;
+    padding: 60px;
+}
+
+.skills-section-container-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.skills-section-container-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 60px;
+}
+
+.button-frontend {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.button-backend {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.button-skill-selected {
+    cursor: default !important;
+    background: linear-gradient(360deg, #1ab577, #00ff83);
+    color: black !important;
+    border: none;
+}
+
+.button-frontend:hover, .button-backend:hover {
+    cursor: pointer;
+    background: linear-gradient(360deg, #1ab577, #00ff83);
+    color: white;
+    border: none;
+}
+
+.skills-container {
+    height: auto;
+    margin: 60px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 100px;
+    cursor: default;
+}
+
+.skills-badge {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    gap: 10px;
+    transition: transform 0.8 ease;
+}
+
+.skills-badge:hover {
+    transform: scale(1.05);
+}
+
+.skills-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-label-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.skills-label-level {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 481px) {
+    .skills-section-container-title {
+        font-size: 20px;
+    }
+    .skills-section-container-button {
+        height: 50px;
+        margin-bottom: 30px;
+    }
+    .button-frontend {
+        width: 150px;
+        font-size: 15px;
+    }
+    .button-backend {
+        width: 150px;
+        font-size: 15px;
+    }
+    .skills-container {
+        height: auto;
+        margin: 0px;
+        padding: 0px;
+        gap: 50px;
+    }
+    .skills-badge {
+        height: 50px;
+        gap: 8px;
+    }
+    .skills-label-title {
+        font-size: 15px;
+    }
+    .skills-label-level {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .skills-section-container-button {
+        height: 40px;
+        margin-bottom: 30px;
+    }
+    .button-frontend {
+        width: 110px;
+        font-size: 11px;
+    }
+    .button-backend {
+        width: 110px;
+        font-size: 11px;
+    }
+    .skills-container {
+        gap: 20px;
+    }
+    .skills-badge {
+        height: 30px;
+        gap: 10px;
+    }
+}
