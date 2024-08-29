@@ -42,11 +42,11 @@
 }
 
 .profile-info-one:hover {
-    cursor: none;
+    cursor: default;
 }
 
 .profile-info-two {
-    cursor: none;
+    cursor: default;
     background: linear-gradient(360deg, #74d600, #c5f55f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -55,7 +55,7 @@
 }
 
 .profile-info-three-job, .profile-info-three-title {
-    cursor: none;
+    cursor: default;
     background: linear-gradient(360deg, #be29ec, #d896ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -145,7 +145,7 @@
 }
 
 .profile-pic-cover:hover {
-    cursor: none;
+    cursor: default;
 }
 
 .profile-social-cover-github {
@@ -238,75 +238,6 @@
     .home-section-container-mobile {
         display: flex;
     }
-    .profile-info-container{
-        margin-top: 20px;
-    }
-    .profile-info-one {
-        font-size: 20px;
-    }
-    .profile-info-two {
-        font-size: 35px;
-    }
-    .profile-info-three {
-        font-size: 35px;
-    }
-    .profile-btn-container {
-        gap: 10px;
-    }
-    .button-download-cv {
-        width: 163.5px;
-    }
-}
-
-@media screen and (max-width: 391px) {
-    .home-section-container-mobile{
-        margin-top: 100px;
-    }
-    .profile-pic-cover {
-        height: 310px;
-        width: 310px;
-    }
-    .profile-pic {
-        height: 310px;
-    }
-    .profile-social-cover-github {
-        left: 140px;
-        bottom: 360px;
-    }
-    .profile-social-cover-linkedin {
-        left: 230px;
-        bottom: 400px;
-    }
-    .profile-info-container{
-        margin-top: 80px;
-    }
-    .profile-info-one {
-        font-size: 18px;
-    }
-    .profile-info-two {
-        font-size: 30px;
-    }
-    .profile-info-three {
-        font-size: 30px;
-    }
-}
-
-@media screen and (max-width: 371px) {
-    .profile-info-one {
-        font-size: 18px;
-    }
-    .profile-info-two {
-        font-size: 28px;
-    }
-    .profile-info-three {
-        font-size: 28px;
-    }
-}
-
-@media screen and (max-height: 668px) {
-    .home-section-container-mobile{
-        margin-top: 120px;
-    }
     .profile-pic-cover {
         height: 260px;
         width: 260px;
@@ -322,6 +253,9 @@
         left: 200px;
         bottom: 350px;
     }
+    .profile-info-container{
+        margin-top: 40px;
+    }
     .profile-info-one {
         font-size: 15px;
     }
@@ -331,7 +265,36 @@
     .profile-info-three {
         font-size: 25px;
     }
-    .profile-info-container {
-        margin-top: 125px;
+    .profile-btn-container {
+        gap: 10px;
+    }
+    .button-download-cv {
+        width: 163.5px;
+    }
+}
+
+@media screen and (max-width: 391px) {
+
+}
+
+@media screen and (max-width: 376px) {
+
+}
+
+@media screen and (max-height: 668px) {
+    .profile-pic-cover {
+        height: 190px;
+        width: 190px;
+    }
+    .profile-pic {
+        height: 190px;
+    }
+    .profile-social-cover-github {
+        left: 90px;
+        bottom: 240px;
+    }
+    .profile-social-cover-linkedin {
+        left: 160px;
+        bottom: 260px;
     }
 }

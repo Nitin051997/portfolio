@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './Home.css';
 
-const Home = () => {
+const Home = (props) => {
 
     const downloadLink = useRef(null);
 
@@ -24,7 +24,7 @@ const Home = () => {
             <div className='profile-btn-container'>
                 <a style={{display: 'none'}} href={`${process.env.PUBLIC_URL}/assets/NitinSivakumar.pdf`} download={`NitinSivakumar_CV.pdf`} ref={downloadLink}>Download</a>
                 <button className="button-download-cv" onClick={() => handleDownload()}>Download CV</button>
-                <button className="button-contact">Contact</button>
+                <button className="button-contact" onClick={() => props.setNavigate(5)}>Contact</button>
             </div>
         </div>
         <div className='profile-pic-container'>
@@ -63,7 +63,7 @@ const Home = () => {
             <div className='profile-btn-container'>
                 <a style={{display: 'none'}} href={`${process.env.PUBLIC_URL}/assets/NitinSivakumar.pdf`} download={`NitinSivakumar_CV.pdf`} ref={downloadLink}>Download</a>
                 <button className="button-download-cv" onClick={() => handleDownload()}>Download CV</button>
-                <button className="button-contact">Contact</button>
+                <button className="button-contact" onClick={() => props.setNavigate(5)}>Contact</button>
             </div>
         </div>
     </section>

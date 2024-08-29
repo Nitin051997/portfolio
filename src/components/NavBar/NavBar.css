@@ -32,7 +32,7 @@
 }
 
 .desktop-app-bar-title {
-    cursor: none;
+    cursor: default;
     background: linear-gradient(360deg, #00d27f, #00ff83);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

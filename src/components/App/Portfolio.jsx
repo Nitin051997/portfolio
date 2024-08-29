@@ -9,7 +9,7 @@ const Portfolio = ( props ) => {
   return (
     <>
     {
-      props.navigate === 1 ? <><Home /></> : 
+      props.navigate === 1 ? <><Home setNavigate={props?.setNavigate}/></> : 
       props.navigate === 2 ? <><Skills /></> : 
       props.navigate === 3 ? <><Projects /></> : 
       props.navigate === 4 ? <><About /></> : 

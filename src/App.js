@@ -32,7 +32,7 @@ function App() {
     <>
       <NavBar navigate={navigate} handleNavigate={handleNavigate}/>
         <NavButton navigate={navigate} isOpen={isOpen} handleNavigate={handleNavigate} handleOpenNavbar={handleOpenNavbar}/>
-          <Portfolio navigate={navigate} />
+          <Portfolio navigate={navigate} setNavigate={setNavigate}/>
     </>
   );
 }
