@@ -36,7 +36,7 @@ const Projects = () => {
     <section className='projects-section-container'>
         <span className='projects-section-container-title'><i>M Y - P R O J E C T S</i></span>
         <div className='projects-container'>
-            <div className='project-card card-shadow' onMouseEnter={() => handleMouseEnter("foodmenu")} onMouseLeave={() => handleMouseLeave("foodmenu")}>
+            <div className='project-card card-shadow project-one' onMouseEnter={() => handleMouseEnter("foodmenu")} onMouseLeave={() => handleMouseLeave("foodmenu")}>
                 <img className='project-picture' src={`${foodmenu}`} alt='projectimg'/>
                 <span className='project-title'>Food Menu<span className='project-live' onClick={() => {window.open('https://nitin051997.github.io/FoodMenu/','_blank')}}>Live <img className='project-live-img' src={`${process.env.PUBLIC_URL}/assets/live.png`} alt='live' /></span></span>
                 <span className='project-bio'>Web App. which allows user to choose their favourite food from the food menu.</span>
@@ -47,7 +47,7 @@ const Projects = () => {
                     <span className='project-btn-label'>View Code</span>
                 </button>
             </div>
-            <div className='project-card card-shadow' onMouseEnter={() => handleMouseEnter("filetransfer")} onMouseLeave={() => handleMouseLeave("filetransfer")}>
+            <div className='project-card card-shadow project-two' onMouseEnter={() => handleMouseEnter("filetransfer")} onMouseLeave={() => handleMouseLeave("filetransfer")}>
                 <img className='project-picture' src={`${filetransfer}`} alt='projectimg'/>
                 <span className='project-title'>File Transfer</span>
                 <span className='project-bio'>Web App. which send file from one user to another with their User ID.</span>
@@ -58,7 +58,7 @@ const Projects = () => {
                     <span className='project-btn-label'>View Code</span>
                 </button>
             </div>
-            <div className='project-card-mobile card-shadow' onMouseEnter={() => handleMouseEnter("tictactoe")} onMouseLeave={() => handleMouseLeave("tictactoe")}>
+            <div className='project-card-mobile card-shadow project-three' onMouseEnter={() => handleMouseEnter("tictactoe")} onMouseLeave={() => handleMouseLeave("tictactoe")}>
                 <div className='project-picture-container'>
                     <img className='project-picture-mobile' src={`${tictactoe}`} alt='projectimg'/>
                 </div>
@@ -71,7 +71,7 @@ const Projects = () => {
                     <span className='project-btn-label'>View Code</span>
                 </button>
             </div>
-            <div className='project-card-mobile card-shadow' onMouseEnter={() => handleMouseEnter("calculator")} onMouseLeave={() => handleMouseLeave("calculator")}>
+            <div className='project-card-mobile card-shadow project-four' onMouseEnter={() => handleMouseEnter("calculator")} onMouseLeave={() => handleMouseLeave("calculator")}>
                 <div className='project-picture-container'>
                     <img className='project-picture-mobile' src={`${calculator}`} alt='projectimg'/>
                 </div>

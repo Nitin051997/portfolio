@@ -5,8 +5,8 @@ const NavButton = ( props ) => {
 
   return (
     <div className={`nav-button ${!props.isOpen ? 'disable-nav-button' : ''}`}>
-        <img className={`${props.navigate === 1 ? 'disable-button' : 'nav-button-up'}`} src={`${process.env.PUBLIC_URL}/assets/navbtn_up.png`} alt='navbtn' onClick={() => props.handleNavigate('goUp')}/>
-        <img className={`${props.navigate === 5 ? 'disable-button' : 'nav-button-down'}`} src={`${process.env.PUBLIC_URL}/assets/navbtn_down.png`} alt='navbtn' onClick={() => props.handleNavigate('goDown')}/>
+        <img className={`${props.navigate === 1 ? 'disable-button disable-button-wh' : 'nav-button-up'}`} src={`${process.env.PUBLIC_URL}/assets/navbtn_up.png`} alt='navbtn' onClick={() => props.handleNavigate('goUp')}/>
+        <img className={`${props.navigate === 5 ? 'disable-button disable-button-wh' : 'nav-button-down'}`} src={`${process.env.PUBLIC_URL}/assets/navbtn_down.png`} alt='navbtn' onClick={() => props.handleNavigate('goDown')}/>
 
         <img className={`mobile-view`} src={`${process.env.PUBLIC_URL}/assets/${props.isOpen ? 'navclose' : 'navopen'}.png`} alt='navopen' onClick={() => props.handleOpenNavbar()}/>
 

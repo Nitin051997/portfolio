@@ -202,6 +202,35 @@
     padding: 100px;
 }
 
+/*Lazy Loading*/
+
+.profile-info-one {
+    animation: HomelazyLoad 0.4s ease-out 0.2s forwards;
+}
+.profile-info-two {
+    animation: HomelazyLoad 0.6s ease-out 0.4s forwards;
+}
+.profile-info-three {
+    animation: HomelazyLoad 0.8s ease-out 0.5s forwards;
+}
+.button-download-cv {
+    animation: HomelazyLoad 0.8s ease-out 0.6s forwards;
+}
+.button-contact {
+    animation: HomelazyLoad 0.8s ease-out 0.6s forwards;
+}
+
+@keyframes HomelazyLoad {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+
 @media screen and (max-width: 481px) {
     .home-section-container{
         display: none;

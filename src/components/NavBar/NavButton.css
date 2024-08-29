@@ -24,6 +24,11 @@
     opacity: 50%;
 }
 
+.disable-button-wh {
+    width: 65px;
+    height: 60px;
+}
+
 .mobile-view {
     display: none;
 }

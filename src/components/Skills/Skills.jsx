@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './Skills.css';
 import skillsData from '../Data/Skills.json';
+import Frontend from './Frontend';
+import Backend from './Backend';
 
 const Skills = () => {
 
@@ -21,31 +23,11 @@ const Skills = () => {
         </div>
         { skillSelected === "forntend" 
         ? <>
-            <div className='skills-container'>
-                {ListofSkillsData.filter((fil) => {return fil.type === "forntend"}).map((details) => {
-                    return (<article className='skills-badge'>
-                        <img src={`${process.env.PUBLIC_URL}/assets/${details.image}.png`} alt="HTML" className="skills-icon" />
-                        <div className='skills-label'>
-                            <span className='skills-label-title'>{details.title}</span>
-                            <span className='skills-label-level'><i>{details.level}</i></span>
-                        </div>
-                    </article>)
-                })}
-            </div>
+            <Frontend ListofSkillsData={ListofSkillsData}/>
           </> 
         : skillSelected === "backend" 
         ? <>
-            <div className='skills-container'>
-                {ListofSkillsData.filter((fil) => {return fil.type === "backend"}).map((details) => {
-                    return (<article className='skills-badge'>
-                        <img src={`${process.env.PUBLIC_URL}/assets/${details.image}.png`} alt="HTML" className="skills-icon" />
-                        <div className='skills-label'>
-                            <span className='skills-label-title'>{details.title}</span>
-                            <span className='skills-label-level'><i>{details.level}</i></span>
-                        </div>
-                    </article>)
-                })}
-            </div>
+            <Backend ListofSkillsData={ListofSkillsData}/>
           </> 
         : null }
     </section>
