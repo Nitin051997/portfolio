@@ -1,5 +1,7 @@
 import React, { useRef } from 'react';
 import './Home.css';
+import pngData from '../Data/PngData.json';
+import jpgData from '../Data/JpgAndGifData.json';
 
 const Home = (props) => {
 
@@ -8,6 +10,9 @@ const Home = (props) => {
     const handleDownload = () => {
         downloadLink.current.click();
       };
+
+    const imagePng = pngData;
+    const imageJpg = jpgData;
 
   return (
     <>
@@ -67,6 +72,27 @@ const Home = (props) => {
             </div>
         </div>
     </section>
+    <div style={{display: "none"}}>
+        {imagePng.map((res) => {
+            return (
+                <img style={{width: "1px", height: "1px"}} src={`${process.env.PUBLIC_URL}/assets/${res}.png`} alt='load'/>
+            )
+        })}
+        {imageJpg.map((res) => {
+            if(res.type === 'jpg / gif'){
+                return (
+                    <>
+                    <img style={{width: "1px", height: "1px"}} src={`${process.env.PUBLIC_URL}/assets/${res.value}.gif`} alt='load'/>
+                    <img style={{width: "1px", height: "1px"}} src={`${process.env.PUBLIC_URL}/assets/${res.value}.jpg`} alt='load'/>
+                    </>
+                )
+            } else {
+                return (
+                    <img style={{width: "1px", height: "1px"}} src={`${process.env.PUBLIC_URL}/assets/${res.value}.jpg`} alt='load'/>
+                )
+            }
+        })}
+    </div>
     </>
   )
 }
