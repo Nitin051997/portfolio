@@ -33,8 +33,8 @@ const Home = (props) => {
             </div>
         </div>
         <div className='profile-pic-container'>
-            <div className='profile-pic-cover'>
-                <img className='profile-pic' src={`${process.env.PUBLIC_URL}/assets/profile.jpg`} alt='profile' />
+            <div className='profile-pic-cover profile-pic-cover-pc'>
+                <img className='profile-pic profile-pic-pc' src={`${process.env.PUBLIC_URL}/assets/profile.jpg`} alt='profile' />
                 <div className='profile-social-cover-github make-hand' onClick={() => window.open('https://github.com/Nitin051997', '_blank')}>
                     <img className='pic-github' src={`${process.env.PUBLIC_URL}/assets/github.png`} alt='github' />
                 </div>
