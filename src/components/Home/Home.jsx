@@ -8,7 +8,8 @@ const Home = (props) => {
     const downloadLink = useRef(null);
 
     const handleDownload = () => {
-        downloadLink.current.click();
+        alert("Building CV is in Progress")
+        // downloadLink.current.click();
       };
 
     const imagePng = pngData;

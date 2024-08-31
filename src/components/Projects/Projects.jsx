@@ -50,7 +50,7 @@ const Projects = () => {
             <div className='project-card card-shadow project-two' onMouseEnter={() => handleMouseEnter("filetransfer")} onMouseLeave={() => handleMouseLeave("filetransfer")}>
                 <img className='project-picture' src={`${filetransfer}`} alt='projectimg'/>
                 <span className='project-title'>File Transfer</span>
-                <span className='project-bio'>Web App. which send file from one user to another with their User ID.</span>
+                <span className='project-bio'>Web App. Send file from one user to another with their User ID.</span>
                 <button className='project-btn make-hand' onClick={() => {
                     window.open('https://github.com/Nitin051997/File_Transfer_Reactjs.git','_blank')
                 }}>
@@ -63,7 +63,7 @@ const Projects = () => {
                     <img className='project-picture-mobile' src={`${tictactoe}`} alt='projectimg'/>
                 </div>
                 <span className='project-title'>Tic Tac Toe</span>
-                <span className='project-bio'>Mobile App. Enjoy playing Tic Tac Toe with your friend's and family.</span>
+                <span className='project-bio'>Mobile App. Playing Tic Tac Toe with your friend's and family.</span>
                 <button className='project-btn make-hand' onClick={() => {
                     window.open('https://github.com/Nitin051997/React_Native_TicTacToe','_blank')
                 }}>
