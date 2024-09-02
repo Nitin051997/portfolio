@@ -76,7 +76,7 @@ const Projects = () => {
                     <img className='project-picture-mobile' src={`${calculator}`} alt='projectimg'/>
                 </div>
                 <span className='project-title'>Calculator</span>
-                <span className='project-bio'>Mobile App. Enjoy playing Tic Tac Toe with your friend's and family.</span>
+                <span className='project-bio'>Mobile App. which helps to solve the unresolved math calculation.</span>
                 <button className='project-btn make-hand' onClick={() => {
                     window.open('https://github.com/Nitin051997/React_Native_Calculator','_blank')
                 }}>
