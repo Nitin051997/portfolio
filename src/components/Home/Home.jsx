@@ -8,8 +8,7 @@ const Home = (props) => {
     const downloadLink = useRef(null);
 
     const handleDownload = () => {
-        alert("Building CV is in Progress")
-        // downloadLink.current.click();
+        downloadLink.current.click();
       };
 
     const imagePng = pngData;
@@ -67,7 +66,7 @@ const Home = (props) => {
                 <span className='profile-info-three-title'>Developer</span>
             </span>
             <div className='profile-btn-container'>
-                <a style={{display: 'none'}} href={`${process.env.PUBLIC_URL}/assets/NitinSivakumar.pdf`} download={`NitinSivakumar_CV.pdf`} ref={downloadLink}>Download</a>
+                <a style={{display: 'none'}} href={`${process.env.PUBLIC_URL}/assets/Nitin_Sivakumar.pdf`} download={`NitinSivakumar_CV.pdf`} ref={downloadLink}>Download</a>
                 <button className="button-download-cv" onClick={() => handleDownload()}>Download CV</button>
                 <button className="button-contact" onClick={() => props.setNavigate(5)}>Contact</button>
             </div>

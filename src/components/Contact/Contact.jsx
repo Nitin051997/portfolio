@@ -4,8 +4,7 @@ import './Contact.css';
 const Contact = () => {
 
     const [skillTags, setSkillTags] = useState([
-        'Frontend', 'HTML', 'Web Page', 'Web Forms', 'CSS', 'UI - UX Design', 
-        'Java Script', 'React JS', 'React Native', 'Backend', 'SQL'
+        'React Js', 'Redux Toolkit', 'Frontend', 'HTML', 'Java Script', 'CSS', 'UI - UX Design', 'Web Page', 'React Native', 'Web Forms', 'Backend', 'SQL'
     ]);
 
     const handleDragStart = (e, dragIndex) => {
@@ -28,7 +27,7 @@ const Contact = () => {
         <span className='contact-section-container-title'><i>C O N T A C T - M E</i></span>
         <div className='contact-details-container'>
             <div className='contact-details-intrest'>
-                <span className='contact-details-intrest-label color-style-purple'>I'm interested in ..</span>
+                <span className='contact-details-intrest-label color-style-purple'>I'm interested area's in ..</span>
                 <div className='contact-details-intrest-box-container'>
                 {skillTags.map((item, index) => (
                     <button
